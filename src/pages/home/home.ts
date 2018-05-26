@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +7,19 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
+    let loading = this.loadingCtrl.create({
+      spinner: 'hide',
+      content: ''
+    });
+  
+    loading.present();
+  
 
+    setTimeout(() => {
+      loading.dismiss();
+    }, 5000);
+    
   }
 
 }

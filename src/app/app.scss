@@ -14,3 +14,39 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+//header modif
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+    background-image: none;
+}
+.toolbar-background {
+    border-bottom:1px solid #d7d7d7;
+    background: #fff;
+}
+.toolbar-md {
+    min-height: 50px;
+}
+
+//tabs modif
+.tabbar{
+    border-top :1px solid red;
+}
+.tabs-md .tabbar {
+    background: #fff;
+}
+.tabs-md .tab-button {
+    min-height: 5rem;
+    font-weight: normal;
+    color:red;
+    padding: 0;
+}
+.tabs-md .tab-button[aria-selected="true"] {
+    color: #fff;
+    background: red;
+}
+.tabs-md .tab-button[aria-selected="true"] .tab-button-icon {
+    color: #fff;
+}
+.tabs-md .tab-button-icon {
+    color: red;
+}
