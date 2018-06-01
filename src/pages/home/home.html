@@ -7,11 +7,67 @@
 
 </ion-header>
 <ion-content padding>
-  <ion-slides pager>
-    <ion-slide *ngFor="let slide of slides">
+  <!--<ion-slides pager >
+    <ion-slide *ngFor="let slide of slides" >
       <img [src]="slide.image" class="slide-image" />
+      
       <h2 class="slide-title" [innerHTML]="slide.title"></h2>
       <div [innerHTML]="slide.description"></div>
     </ion-slide>
-  </ion-slides>
+  </ion-slides>-->
+  <ion-card>
+
+      <img src="assets/imgs/img4.png"/>
+  
+      <ion-card-content>
+        <ion-card-title>
+            Bali Camp Facilities
+        </ion-card-title>
+        <p align="center">
+          Bali Camp menawarkan fasilitas akomodasi berkelas yang memungkinkan anda untuk bersantai.
+          Dilengkapi dengan fasilitas ruang tamu yang luas, kenyamanan rumah modern dan kolam renang.
+        </p>
+      </ion-card-content>
+  
+      <ion-row no-padding>
+        
+        
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-right (click)="facilities()">
+              More
+            <ion-icon name='arrow-forward'></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+  
+  </ion-card>
+  <ion-card>
+
+      <img src="assets/imgs/img5.jpg"/>
+  
+      <ion-card-content>
+        <ion-card-title>
+            Bali Camp Programs
+        </ion-card-title>
+        <p align="center">
+           Bali Camp menawarkan PROGRAM paket Outbound untuk organisasi, perusahaan dan sekolah - sekolah yang ingin
+           meningkatkan atau membangun sikap kepemimpinan dan kerjasama kelompok.
+
+        </p>
+      </ion-card-content>
+  
+      <ion-row no-padding>
+        
+        
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-right (click)="programs()">
+              More
+            <ion-icon name='arrow-forward'></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+  
+  </ion-card>
+      
+      
 </ion-content>

@@ -1,5 +1,5 @@
 page-home {
-    .slide-zoom {
+    /*.slide-zoom {
         height: 100%;
         overflow: scroll;
       }
@@ -38,7 +38,7 @@ page-home {
         background: #ff5e5e;
         color:#fff;
         font-weight: bold;
-    }
+    }*/
 }
 
 ion-app.md [padding] .scroll-content {
@@ -47,4 +47,7 @@ ion-app.md [padding] .scroll-content {
 .swiper-pagination-bullet-active {
     background: red;
     opacity: 1;
+}
+ion-card-title{
+  text-align: center;
 }

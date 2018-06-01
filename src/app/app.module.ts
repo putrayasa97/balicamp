@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler, Keyboard } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -12,6 +12,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LocationPage } from '../pages/location/location';
 import { GoogleMaps  } from '@ionic-native/google-maps';
+import { HttpModule } from '@angular/http';
+import { EmailComposer } from '@ionic-native/email-composer';
+import { FacilitiesPage } from '../pages/facilities/facilities';
+import { ProgramsPage } from '../pages/programs/programs';
+import { GalleryPage } from '../pages/gallery/gallery';
+import { ServicePage } from '../pages/service/service';
 
 @NgModule({
   declarations: [
@@ -20,10 +26,15 @@ import { GoogleMaps  } from '@ionic-native/google-maps';
     ContactPage,
     HomePage,
     TabsPage,
-    LocationPage
+    LocationPage,
+    FacilitiesPage,
+    ProgramsPage,
+    GalleryPage,
+    ServicePage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -33,12 +44,18 @@ import { GoogleMaps  } from '@ionic-native/google-maps';
     ContactPage,
     HomePage,
     TabsPage,
-    LocationPage
+    LocationPage,
+    FacilitiesPage,
+    ProgramsPage,
+    GalleryPage,
+    ServicePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     GoogleMaps,
+    EmailComposer,
+    Keyboard,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

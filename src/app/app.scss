@@ -16,16 +16,17 @@
 // automatically applied to the <body> element in the app.
 
 //header modif
+
 .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
     background-image: none;
 }
 .toolbar-background {
     border-bottom:1px solid #d10000;
-    background: #ff0000;
+    background: #ec3438;
 }
 .toolbar-md {
     min-height: 45px;
-    
+        
 }
 .toolbar-title-md {
     color: #fff;
@@ -87,4 +88,8 @@ transition: transform 0.0s ease-in-out, -webkit-transform 0.0s ease-in-out;
 -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0% 0px;
 transform-origin: 0% 0%;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color:#fff;
 }

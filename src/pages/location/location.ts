@@ -40,7 +40,8 @@ startMap() {
     map: this.map
   });
   this.infowindow = new google.maps.InfoWindow({
-    content: "<center><div><h6>Bali Camp</h6></div><img src='assets/imgs/img4.png' weight='60' height='60'></center>"
+    content: "<center><img src='assets/imgs/img4.png' weight='60' height='60'><h6>Bali Camp</h6><p>Jl. Raya Pacung no. 32A,</br>Baturiti"+
+    "Tabanan Bali 82191, Indonesia</p></center>"
   });
   this.infowindow.open(this.map,this.marker);
   }
