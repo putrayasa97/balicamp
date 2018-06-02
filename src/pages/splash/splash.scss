@@ -1,0 +1,17 @@
+page-splash {
+
+}
+.images{
+    margin: 10% auto;
+}
+.custom-spinner-box{
+    width: 28px;
+    height: 28px;
+    margin: auto;
+}
+ion-spinner * {
+    width: 28px;
+    height: 28px;
+    stroke: #444;
+    fill: #222;
+  }

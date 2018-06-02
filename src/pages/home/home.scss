@@ -1,9 +1,12 @@
 page-home {
-    /*.slide-zoom {
+    .slide-zoom {
         height: 100%;
-        overflow: scroll;
       }
-    
+      .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+        left:0;
+        bottom: 10%;
+        width: 100%;
+    }
       .slide-title {
         margin-top: 2.8rem;
       }
@@ -38,7 +41,7 @@ page-home {
         background: #ff5e5e;
         color:#fff;
         font-weight: bold;
-    }*/
+    }
 }
 
 ion-app.md [padding] .scroll-content {
@@ -50,4 +53,23 @@ ion-app.md [padding] .scroll-content {
 }
 ion-card-title{
   text-align: center;
+}
+ion-slides {
+  height: auto;
+}
+.swiper-pagination-bullet {
+
+  border-radius: 100%;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: red;
+  opacity: 0.2;
+  pointer-events: auto;
+
+}
+.swiper-pagination-bullet-active {
+  background: red;
+  opacity: 1;
+
 }

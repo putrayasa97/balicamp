@@ -18,6 +18,7 @@ import { FacilitiesPage } from '../pages/facilities/facilities';
 import { ProgramsPage } from '../pages/programs/programs';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { ServicePage } from '../pages/service/service';
+import { SplashPage } from '../pages/splash/splash';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ServicePage } from '../pages/service/service';
     FacilitiesPage,
     ProgramsPage,
     GalleryPage,
-    ServicePage
+    ServicePage,
+    SplashPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { ServicePage } from '../pages/service/service';
     FacilitiesPage,
     ProgramsPage,
     GalleryPage,
-    ServicePage
+    ServicePage,
+    SplashPage
   ],
   providers: [
     StatusBar,
@@ -56,6 +59,7 @@ import { ServicePage } from '../pages/service/service';
     GoogleMaps,
     EmailComposer,
     Keyboard,
+    SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

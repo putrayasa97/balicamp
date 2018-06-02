@@ -4,7 +4,7 @@ import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { LocationPage } from '../location/location';
-import { Keyboard } from 'ionic-angular';
+import { Keyboard} from 'ionic-angular';
 import { GalleryPage } from '../gallery/gallery';
 import { ServicePage } from '../service/service';
 
@@ -26,7 +26,7 @@ export class TabsPage {
     //this.keyboard.close().subscribe((value)=>{this.valueforngif=true});
   }
   ionViewDidLoad(){
-    
+ 
   }
 }
 
