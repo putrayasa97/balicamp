@@ -1,0 +1,15 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Villa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card  class="image-slider" loop="true" slidesPerView="2" *ngFor="let img of images">
+        <img src="assets/imgs/villa/{{img}}" imageViewer/>
+    </ion-card>
+</ion-content>

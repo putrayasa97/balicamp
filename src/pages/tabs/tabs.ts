@@ -4,16 +4,16 @@ import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { LocationPage } from '../location/location';
-import { Keyboard} from 'ionic-angular';
 import { GalleryPage } from '../gallery/gallery';
 import { ServicePage } from '../service/service';
+import { Keyboard } from '@ionic-native/keyboard';
 
 @Component({
   selector: 'page-tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-  valueforngif = false;
+  valueforngif =true;
   tabHome = HomePage;
   tabAbout = AboutPage;
   tabContact = ContactPage;
@@ -21,12 +21,19 @@ export class TabsPage {
   tabGallery = GalleryPage;
   tabService = ServicePage;
 
-  constructor(public keyboard: Keyboard) {
-    //this.keyboard.isOpen().subscribe(()=>{this.valueforngif=false});
-    //this.keyboard.close().subscribe((value)=>{this.valueforngif=true});
+  constructor(keyboard:Keyboard) {
+    keyboard.onKeyboardShow().subscribe(() => {
+      document.body.classList.add('keyboard-is-open');
+    });
+  keyboard.onKeyboardHide().subscribe(() => {
+    document.body.classList.remove('keyboard-is-open');
+   });
   }
   ionViewDidLoad(){
- 
+    
+  }
+  ionViewDidEnter(){
+    
   }
 }
 

@@ -1,7 +1,8 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler, Keyboard } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import { MyApp } from './app.component';
+import { Keyboard } from '@ionic-native/keyboard';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -20,6 +21,11 @@ import { GalleryPage } from '../pages/gallery/gallery';
 import { ServicePage } from '../pages/service/service';
 import { SplashPage } from '../pages/splash/splash';
 
+import { IonicImageViewerModule } from 'ionic-img-viewer';
+import { VillaPage } from '../pages/villa/villa';
+import { MeetingRoomPage } from '../pages/meeting-room/meeting-room';
+import { PoolPage } from '../pages/pool/pool';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -32,12 +38,17 @@ import { SplashPage } from '../pages/splash/splash';
     ProgramsPage,
     GalleryPage,
     ServicePage,
-    SplashPage
+    SplashPage,
+    VillaPage,
+    MeetingRoomPage,
+    PoolPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicImageViewerModule,
+    IonicModule.forRoot(MyApp,{scrollAssist: false,
+      autoFocusAssist: false})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -51,7 +62,10 @@ import { SplashPage } from '../pages/splash/splash';
     ProgramsPage,
     GalleryPage,
     ServicePage,
-    SplashPage
+    SplashPage,
+    VillaPage,
+    MeetingRoomPage,
+    PoolPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,15 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Meeting Room</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card  class="image-slider" loop="true" slidesPerView="2" *ngFor="let img of images">
+        <img src="assets/imgs/meeting-room/{{img}}" imageViewer/>
+    </ion-card>
+</ion-content>

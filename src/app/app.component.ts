@@ -18,6 +18,9 @@ export class MyApp {
       statusBar.styleDefault();
       let splash = modalCtrl.create(SplashPage);
       splash.present();
+
+   
+  
     });
   }
 }
