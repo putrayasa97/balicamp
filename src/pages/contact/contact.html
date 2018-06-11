@@ -7,17 +7,29 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item>
-        <ion-label floating>Email</ion-label>
-        <ion-input type="text" [(ngModel)]="form"></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label floating>Message</ion-label>
-        <ion-textarea [(ngModel)]="message"></ion-textarea>
-    </ion-item>
-</ion-list>
-<div padding>
-    <button ion-button (click)="send(form,message)">Send</button>
-</div>
+    <ion-card>
+        <ion-card-header>
+          <div class="header">Contact Us Via Email</div>
+        </ion-card-header>
+        <ion-card-content>
+                <ion-item>
+                    <ion-input type="text" [(ngModel)]="fullName" placeholder="Full Name*"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" [(ngModel)]="emailAddress" placeholder="Email Address*"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" [(ngModel)]="phone" placeholder="Phone*"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-textarea [(ngModel)]="message" placeholder="Message*"></ion-textarea>
+                </ion-item>
+            <div padding>
+                <button ion-button (click)="send()" color="danger">Send Email Compose</button>
+            </div>
+
+            
+        </ion-card-content>
+      </ion-card>
+  
 </ion-content>

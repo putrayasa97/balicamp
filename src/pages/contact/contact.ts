@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { IonicPage, NavController, NavParams} from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, App} from 'ionic-angular';
 import { EmailComposer } from '@ionic-native/email-composer';
 
 @IonicPage()
@@ -8,8 +8,12 @@ import { EmailComposer } from '@ionic-native/email-composer';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  fullName:string="";
+  emailAddress:string="";
+  phone:string="";
+  message :string="";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private emailComposer: EmailComposer ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private emailComposer: EmailComposer, public alertCtrl: AlertController, public app:App) {
   
       
 
@@ -19,15 +23,32 @@ export class ContactPage {
     console.log('ionViewDidLoad ConfirmorderPage');
    
   }
-  send(form:string, message:string) {
+  send() {
+    if(this.fullName == "" || this.emailAddress =="" || this.phone =="" || this.message == ""){
+      const alert = this.alertCtrl.create({
+        title: 'Message',
+        subTitle: 'Form is still empty!',
+        buttons: ['OK']
+      });
+      alert.present();
+    }else{
         let email = {
           to: 'putu.yasa2@gmail.com',
-          cc: form,
-          subject: 'Bali Camp Support',
-          body: "form: " + form +"<br>"+message,
+          subject: "Bali Camp Support",
+          body:
+
+          "Full Name :"+this.fullName+"<br>"+
+          "Form Email Address : " + this.emailAddress +"<br>"+
+          "Phone : " + this.phone +"<br>"+
+          "Message :"+this.message,
           isHtml: true
         };
         this.emailComposer.open(email);
+        this.fullName ="";
+        this.emailAddress="";
+        this.phone="";
+        this.message="";
+      }
   }
 
 }

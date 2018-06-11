@@ -1,7 +1,18 @@
 page-contact {
+    
     .toolbar-title-md {
         color: #fff;
         text-align: center;
         width: 80%;
+    }
+    
+    .item.item-block.item-input .item-inner {
+        border-bottom: solid 1px #ff2323; 
+    }
+    .text-input-md {
+        margin: 30px 8px;
+    }
+    .header{
+        font-size: 30px;
     }
 }
