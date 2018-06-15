@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import { ServVillaPage } from '../serv-villa/serv-villa';
+import { ServMeetingPage } from '../serv-meeting/serv-meeting';
 
-/**
- * Generated class for the ServicePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +11,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ServicePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app:App) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ServicePage');
   }
-
+  servVilla(){
+    this.app.getRootNav().push(ServVillaPage);
+  }
+  servMeeting(){
+    this.app.getRootNav().push(ServMeetingPage);
+  }
 }

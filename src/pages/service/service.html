@@ -14,5 +14,34 @@
 
 
 <ion-content padding>
-
+  <ion-card>
+    <img src="assets/imgs/villa/2.jpg" />
+    <div class="card-title">Villa</div>
+    <ion-card-content>
+      <p align="center">10 Bed Villa and 7 Bed Villa</p>
+      <ion-row no-padding>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-right (click)="servVilla()">
+            More
+            <ion-icon name='arrow-forward'></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="assets/imgs/meeting-room/2.jpg" />
+    <div class="card-title">Meeting Package</div>
+    <ion-card-content>
+        <p align="center">Half Day Meeting, Full Day Meeting and Full Borad Meeting</p>
+      <ion-row no-padding>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-right (click)="servMeeting()">
+            More
+            <ion-icon name='arrow-forward'></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

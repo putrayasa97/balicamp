@@ -25,6 +25,8 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
 import { VillaPage } from '../pages/villa/villa';
 import { MeetingRoomPage } from '../pages/meeting-room/meeting-room';
 import { PoolPage } from '../pages/pool/pool';
+import { ServMeetingPage } from '../pages/serv-meeting/serv-meeting';
+import { ServVillaPage } from '../pages/serv-villa/serv-villa';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { PoolPage } from '../pages/pool/pool';
     SplashPage,
     VillaPage,
     MeetingRoomPage,
-    PoolPage
+    PoolPage,
+    ServMeetingPage,
+    ServVillaPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,9 @@ import { PoolPage } from '../pages/pool/pool';
     SplashPage,
     VillaPage,
     MeetingRoomPage,
-    PoolPage
+    PoolPage,
+    ServMeetingPage,
+    ServVillaPage
   ],
   providers: [
     StatusBar,
