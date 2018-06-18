@@ -4,4 +4,23 @@ page-serv-meeting {
         text-align: center;
         width: 80%;
     }
+    .price{
+        color: #ec3438;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+    ion-card {
+        position: relative;
+        text-align: center;
+      }
+    .card-title {
+        position: absolute;
+        top: 30%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        background-color: rgba(255, 29, 29, 0.377);
+      }
 }

@@ -4,13 +4,6 @@ import { VillaPage } from '../villa/villa';
 import { MeetingRoomPage } from '../meeting-room/meeting-room';
 import { PoolPage } from '../pool/pool';
 
-/**
- * Generated class for the GalleryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-gallery',
