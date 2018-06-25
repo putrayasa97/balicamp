@@ -18,7 +18,6 @@ import { FacilitiesPage } from '../pages/facilities/facilities';
 import { ProgramsPage } from '../pages/programs/programs';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { ServicePage } from '../pages/service/service';
-import { SplashPage } from '../pages/splash/splash';
 
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 import { VillaPage } from '../pages/villa/villa';
@@ -39,7 +38,6 @@ import { ServVillaPage } from '../pages/serv-villa/serv-villa';
     ProgramsPage,
     GalleryPage,
     ServicePage,
-    SplashPage,
     VillaPage,
     MeetingRoomPage,
     PoolPage,
@@ -64,7 +62,6 @@ import { ServVillaPage } from '../pages/serv-villa/serv-villa';
     ProgramsPage,
     GalleryPage,
     ServicePage,
-    SplashPage,
     VillaPage,
     MeetingRoomPage,
     PoolPage,
@@ -76,7 +73,6 @@ import { ServVillaPage } from '../pages/serv-villa/serv-villa';
     SplashScreen,
     GoogleMaps,
     EmailComposer,
-    SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

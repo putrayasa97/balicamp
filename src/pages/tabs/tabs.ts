@@ -12,7 +12,6 @@ import { ServicePage } from '../service/service';
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-  valueforngif =true;
   tabHome = HomePage;
   tabAbout = AboutPage;
   tabContact = ContactPage;
@@ -21,13 +20,14 @@ export class TabsPage {
   tabService = ServicePage;
 
   constructor() {
-  }
-  ionViewDidLoad(){
     
+  }
+  
+  ionViewDidLoad(){
   }
   ionViewDidEnter(){
     
   }
-}
+ }
 
 
